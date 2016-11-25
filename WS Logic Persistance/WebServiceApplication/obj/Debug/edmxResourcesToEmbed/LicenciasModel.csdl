@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LicenciasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Auditoria">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int32" Nullable="false" />
+    <Property Name="NumeroLicencia" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="IdUsuario" Type="Int32" />
+    <Property Name="Observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Auditoria__IdUsu__1FCDBCEB" FromRole="Auditoria" ToRole="Usuario" />
+    <NavigationProperty Name="Licenciamiento" Relationship="Self.FK__Auditoria__Numer__1920BF5C" FromRole="Auditoria" ToRole="Licenciamiento" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="Nombre" />
+    </Key>
+    <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Carpeta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Licenciamiento" Relationship="Self.FK__Licenciam__Nombr__1CF15040" FromRole="Clientes" ToRole="Licenciamiento" />
+  </EntityType>
+  <EntityType Name="Configuraciones">
+    <Key>
+      <PropertyRef Name="Clave" />
+    </Key>
+    <Property Name="Clave" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Valor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Licenciamiento">
+    <Key>
+      <PropertyRef Name="NumeroLicencia" />
+    </Key>
+    <Property Name="NumeroLicencia" Type="Int32" Nullable="false" />
+    <Property Name="NombreArchivo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IdLicencia" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Version" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="SerialModulos" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Concurrencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Precision="0" />
+    <Property Name="FechaGeneracion" Type="DateTime" Precision="0" />
+    <Property Name="FechaCaducidad" Type="DateTime" Precision="0" />
+    <Property Name="ResponsableSolicitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ResponsableGeneracion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Auditoria" Relationship="Self.FK__Auditoria__Numer__1920BF5C" FromRole="Licenciamiento" ToRole="Auditoria" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK__Licenciam__Nombr__1CF15040" FromRole="Licenciamiento" ToRole="Clientes" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdRol" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.UsuarioRol" FromRole="Roles" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Auditoria" Relationship="Self.FK__Auditoria__IdUsu__1FCDBCEB" FromRole="Usuario" ToRole="Auditoria" />
+    <NavigationProperty Name="Roles" Relationship="Self.UsuarioRol" FromRole="Usuario" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK__Auditoria__IdUsu__1FCDBCEB">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Auditoria" Type="Self.Auditoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Auditoria">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Auditoria__Numer__1920BF5C">
+    <End Role="Licenciamiento" Type="Self.Licenciamiento" Multiplicity="0..1" />
+    <End Role="Auditoria" Type="Self.Auditoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licenciamiento">
+        <PropertyRef Name="NumeroLicencia" />
+      </Principal>
+      <Dependent Role="Auditoria">
+        <PropertyRef Name="NumeroLicencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Licenciam__Nombr__1CF15040">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Licenciamiento" Type="Self.Licenciamiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="Licenciamiento">
+        <PropertyRef Name="NombreCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioRol">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="LicenciasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Auditoria" EntityType="Self.Auditoria" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Configuraciones" EntityType="Self.Configuraciones" />
+    <EntitySet Name="Licenciamiento" EntityType="Self.Licenciamiento" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK__Auditoria__IdUsu__1FCDBCEB" Association="Self.FK__Auditoria__IdUsu__1FCDBCEB">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Auditoria" EntitySet="Auditoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Auditoria__Numer__1920BF5C" Association="Self.FK__Auditoria__Numer__1920BF5C">
+      <End Role="Licenciamiento" EntitySet="Licenciamiento" />
+      <End Role="Auditoria" EntitySet="Auditoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Licenciam__Nombr__1CF15040" Association="Self.FK__Licenciam__Nombr__1CF15040">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Licenciamiento" EntitySet="Licenciamiento" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioRol" Association="Self.UsuarioRol">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

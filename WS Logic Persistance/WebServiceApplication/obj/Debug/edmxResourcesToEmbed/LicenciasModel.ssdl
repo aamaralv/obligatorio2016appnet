@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LicenciasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Auditoria">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="int" Nullable="false" />
+    <Property Name="NumeroLicencia" Type="int" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="IdUsuario" Type="int" />
+    <Property Name="Observacion" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="Nombre" />
+    </Key>
+    <Property Name="Nombre" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Carpeta" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Configuraciones">
+    <Key>
+      <PropertyRef Name="Clave" />
+    </Key>
+    <Property Name="Clave" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Valor" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Licenciamiento">
+    <Key>
+      <PropertyRef Name="NumeroLicencia" />
+    </Key>
+    <Property Name="NumeroLicencia" Type="int" Nullable="false" />
+    <Property Name="NombreArchivo" Type="varchar" MaxLength="30" />
+    <Property Name="NombreCliente" Type="varchar" MaxLength="20" />
+    <Property Name="IdLicencia" Type="nchar" MaxLength="50" />
+    <Property Name="Version" Type="varchar" MaxLength="9" />
+    <Property Name="SerialModulos" Type="varchar" MaxLength="100" />
+    <Property Name="Concurrencia" Type="varchar" MaxLength="50" />
+    <Property Name="FechaSolicitud" Type="date" />
+    <Property Name="FechaGeneracion" Type="date" />
+    <Property Name="FechaCaducidad" Type="date" />
+    <Property Name="ResponsableSolicitud" Type="varchar" MaxLength="20" />
+    <Property Name="ResponsableGeneracion" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdRol" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="10" />
+    <Property Name="Contraseña" Type="varchar" MaxLength="32" />
+    <Property Name="Correo" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="UsuarioRol">
+    <Key>
+      <PropertyRef Name="IdRol" />
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdRol" Type="int" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Auditoria__IdUsu__1FCDBCEB">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Auditoria" Type="Self.Auditoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Auditoria">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Auditoria__Numer__1920BF5C">
+    <End Role="Licenciamiento" Type="Self.Licenciamiento" Multiplicity="0..1" />
+    <End Role="Auditoria" Type="Self.Auditoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licenciamiento">
+        <PropertyRef Name="NumeroLicencia" />
+      </Principal>
+      <Dependent Role="Auditoria">
+        <PropertyRef Name="NumeroLicencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Licenciam__Nombr__1CF15040">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Licenciamiento" Type="Self.Licenciamiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="Licenciamiento">
+        <PropertyRef Name="NombreCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UsuarioRo__IdRol__1DE57479">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="UsuarioRol" Type="Self.UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="UsuarioRol">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UsuarioRo__IdUsu__1ED998B2">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="UsuarioRol" Type="Self.UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="UsuarioRol">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LicenciasModelStoreContainer">
+    <EntitySet Name="Auditoria" EntityType="Self.Auditoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Configuraciones" EntityType="Self.Configuraciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Licenciamiento" EntityType="Self.Licenciamiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsuarioRol" EntityType="Self.UsuarioRol" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Auditoria__IdUsu__1FCDBCEB" Association="Self.FK__Auditoria__IdUsu__1FCDBCEB">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Auditoria" EntitySet="Auditoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Auditoria__Numer__1920BF5C" Association="Self.FK__Auditoria__Numer__1920BF5C">
+      <End Role="Licenciamiento" EntitySet="Licenciamiento" />
+      <End Role="Auditoria" EntitySet="Auditoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Licenciam__Nombr__1CF15040" Association="Self.FK__Licenciam__Nombr__1CF15040">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Licenciamiento" EntitySet="Licenciamiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UsuarioRo__IdRol__1DE57479" Association="Self.FK__UsuarioRo__IdRol__1DE57479">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UsuarioRo__IdUsu__1ED998B2" Association="Self.FK__UsuarioRo__IdUsu__1ED998B2">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,181 @@
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\ApplicationInsights.config
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\csc.exe
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\vbc.exe
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\WebServiceApplication.dll.config
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\WebServiceApplication.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\WebServiceApplication.pdb
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.Web.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.Web.xml
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\obj\Debug\WebServiceApplication.dll
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\obj\Debug\WebServiceApplication.pdb
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\ApplicationInsights.config
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\csc.exe
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\vbc.exe
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\WebServiceApplication.dll.config
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\WebServiceApplication.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\WebServiceApplication.pdb
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.Web.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.Web.xml
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\obj\Debug\WebServiceApplication.csprojResolveAssemblyReference.cache
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\obj\Debug\WebServiceApplication.dll
+C:\Users\Owner\Desktop\WebApplication\WebServiceApplication\obj\Debug\WebServiceApplication.pdb
+C:\Users\Owner\Desktop\WebServiceApplication\WebServiceApplication\obj\Debug\WebServiceApplication.csprojResolveAssemblyReference.cache
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\ApplicationInsights.config
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\csc.exe
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\vbc.exe
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\WebServiceApplication.dll.config
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\WebServiceApplication.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\WebServiceApplication.pdb
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\EntityFramework.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.Web.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\EntityFramework.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.Web.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\obj\Debug\WebServiceApplication.csprojResolveAssemblyReference.cache
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\obj\Debug\WebServiceApplication.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication\WebServiceApplication\obj\Debug\WebServiceApplication.pdb
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\ApplicationInsights.config
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\csc.exe
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\vbc.exe
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\WebServiceApplication.dll.config
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\WebServiceApplication.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\WebServiceApplication.pdb
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\EntityFramework.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.Web.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\EntityFramework.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.Web.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\obj\Debug\WebServiceApplication.csprojResolveAssemblyReference.cache
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\obj\Debug\WebServiceApplication.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\obj\Debug\WebServiceApplication.pdb
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\LogicPersistance.dll
+C:\Users\RODRIGOB3\Desktop\WebServiceApplication (1)\WebServiceApplication\bin\LogicPersistance.pdb
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\ApplicationInsights.config
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\csc.exe
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\vbc.exe
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\WebServiceApplication.dll.config
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\WebServiceApplication.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\WebServiceApplication.pdb
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\LogicPersistance.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.Web.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\LogicPersistance.pdb
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.Web.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.csprojResolveAssemblyReference.cache
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.dll
+C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.pdb
