@@ -18,3 +18,12 @@ C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\LogicPers
 C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\LogicPersistance\obj\Debug\LogicPersistance.csprojResolveAssemblyReference.cache
 C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\LogicPersistance\obj\Debug\LogicPersistance.dll
 C:\Users\aa\Documents\Visual Studio 2015\Projects\WS Logic Persistance\LogicPersistance\obj\Debug\LogicPersistance.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\bin\Debug\LogicPersistance.dll.config
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\bin\Debug\LogicPersistance.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\bin\Debug\LogicPersistance.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\bin\Debug\EntityFramework.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\bin\Debug\EntityFramework.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\obj\Debug\LogicPersistance.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\LogicPersistance\obj\Debug\LogicPersistance.pdb
