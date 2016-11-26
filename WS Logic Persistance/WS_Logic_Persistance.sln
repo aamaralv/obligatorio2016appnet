@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceApplication", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicPersistance", "LogicPersistance\LogicPersistance.csproj", "{F3A65078-42FB-4965-B3EF-59DE813D200C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRestApplication", "WebRestApplication\WebRestApplication.csproj", "{E87F96F1-01CB-4491-AABE-D83EC23C0DFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F3A65078-42FB-4965-B3EF-59DE813D200C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3A65078-42FB-4965-B3EF-59DE813D200C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3A65078-42FB-4965-B3EF-59DE813D200C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87F96F1-01CB-4491-AABE-D83EC23C0DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87F96F1-01CB-4491-AABE-D83EC23C0DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87F96F1-01CB-4491-AABE-D83EC23C0DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87F96F1-01CB-4491-AABE-D83EC23C0DFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
