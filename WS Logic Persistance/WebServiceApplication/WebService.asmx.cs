@@ -21,29 +21,87 @@ namespace WebServiceApplication{
     public class WebService : System.Web.Services.WebService{
 
         /*-------------------------------------------------USUARIOS----------------------------------------------------*/
-
-        //Insertar Usuarios
+        //loguea Usuario
         [WebMethod]
-        public void AddUsuarios(int idUsuario, String nombre, String usuario1, String contrasena, String correo){
-            try{
+        public String LoguearUsuarioAdmin(String logueo, String contraseña)
+        {
+            String error = "No";
+            try
+            {
                 using (LicenciasEntities DBF = new LicenciasEntities())
                 {
-                    Usuario usuario = new Usuario();
+                    var user = DBF.Usuario.Where(Usuario => Usuario.Usuario1 == logueo);
+
+                    if (user != null)
                     {
-                        usuario.IdUsuario  = idUsuario;
-                        usuario.Nombre     = nombre;
-                        usuario.Usuario1   = usuario1;
-                        usuario.Contraseña = contrasena;
-                        usuario.Correo     = correo;
-                        DBF.Usuario.Add(usuario);
-                        DBF.SaveChanges();
+                        foreach (Usuario cliente in user) {
+                            if (cliente.Contraseña == contraseña)
+                            {
+                                //pregunto por rol
+                                error = "No";
+                            }
+                            else {
+                                error = "La contraseña no es correcta";
+                            }
+                        }
                     }
+                    else{
+                        error = "El usuario no existe";
+                    }
+
                 }
-            }catch (Exception ex){
+
+                return error;
+            }
+            catch (Exception ex)
+            {
                 System.Console.Write(ex.StackTrace);
+                return error = ex.Message;
             }
         }
 
+        //Insertar Usuarios
+        [WebMethod]
+        public String AddUsuario(String nombre, String logueo, String contraseña, String correo, int idRol)
+        {
+            String error = "No";
+            try
+            {
+                using (LicenciasEntities DBF = new LicenciasEntities())
+                {
+                    var usuarioABuscar = DBF.Usuario.Where(Usuario => Usuario.Usuario1 == logueo);
+                    if (usuarioABuscar.Count() == 0)
+                    {
+                        Usuario usuario = new Usuario();
+                        {
+                            usuario.Nombre = nombre;
+                            usuario.Usuario1 = logueo;
+                            usuario.Contraseña = contraseña;
+                            usuario.Correo = correo;
+                            DBF.Usuario.Add(usuario);
+                            DBF.SaveChanges();
+                        }
+                        var usuarioABuscarParaAsiganrRol = DBF.Usuario.Where(Usuario => Usuario.Usuario1 == logueo);
+
+                        foreach (Usuario user in usuarioABuscarParaAsiganrRol) {
+                            AddRol(idRol,user.IdUsuario);
+                        }
+                    }
+                    else
+                    {
+                        error = "Ya existe un usuario registrado con ese nombre de usuario.";
+                    }
+
+                }
+
+                return error;
+            }
+            catch (Exception ex)
+            {
+                System.Console.Write(ex.StackTrace);
+                return error = ex.Message;
+            }
+        }
         //Actualizar usuario
         [WebMethod]
         public void UpdateUsuario(int idUsuario, String nombre, String usuario1, String contrasena, String correo)
@@ -272,11 +330,11 @@ namespace WebServiceApplication{
 
         //Actualizar configuracion
         [WebMethod]
-        public void UpdateConfig(int clave, String valor){
+        public void UpdateConfig(String clave, String valor){
             try{
                 using (LicenciasEntities DBF = new LicenciasEntities())
                 {
-                    var original = DBF.Configuraciones.Find(clave);
+                    var original = DBF.Configuraciones.Find(clave.Replace("\\", ""));
                     if (original != null){
                         original.Valor = valor;
                         DBF.SaveChanges();

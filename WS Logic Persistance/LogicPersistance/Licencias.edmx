@@ -67,7 +67,7 @@
           <Key>
             <PropertyRef Name="IdUsuario" />
           </Key>
-          <Property Name="IdUsuario" Type="int" Nullable="false" />
+          <Property Name="IdUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="Usuario" Type="varchar" MaxLength="10" />
           <Property Name="Contraseña" Type="varchar" MaxLength="32" />
@@ -193,7 +193,7 @@
             <PropertyRef Name="Nombre" />
           </Key>
           <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Carpeta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Carpeta" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Licenciamiento" Relationship="Self.FK__Licenciam__Nombr__1CF15040" FromRole="Clientes" ToRole="Licenciamiento" />
         </EntityType>
         <EntityType Name="Configuraciones">
@@ -201,7 +201,7 @@
             <PropertyRef Name="Clave" />
           </Key>
           <Property Name="Clave" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Valor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Valor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Licenciamiento">
           <Key>
@@ -244,7 +244,7 @@
           <Key>
             <PropertyRef Name="IdUsuario" />
           </Key>
-          <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Usuario1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="Contraseña" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
@@ -427,6 +427,20 @@
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
-    <Diagrams></Diagrams>
+    <Diagrams>
+      <Diagram DiagramId="8846d50b3061438e9ed2850f25c4a063" Name="Diagram1">
+        <EntityTypeShape EntityType="LicenciasModel.Auditoria" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LicenciasModel.Clientes" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LicenciasModel.Configuraciones" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LicenciasModel.Licenciamiento" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LicenciasModel.Roles" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LicenciasModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LicenciasModel.Usuario" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="LicenciasModel.FK__Auditoria__IdUsu__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="LicenciasModel.FK__Auditoria__Numer__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="LicenciasModel.FK__Licenciam__Nombr__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="LicenciasModel.UsuarioRol" ManuallyRouted="false" />
+      </Diagram>
+    </Diagrams>
   </Designer>
 </edmx:Edmx>

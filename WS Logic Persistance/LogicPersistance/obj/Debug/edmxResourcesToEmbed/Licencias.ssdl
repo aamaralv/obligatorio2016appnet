@@ -62,7 +62,7 @@
     <Key>
       <PropertyRef Name="IdUsuario" />
     </Key>
-    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Nombre" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Usuario" Type="varchar" MaxLength="10" />
     <Property Name="Contraseña" Type="varchar" MaxLength="32" />

@@ -17,7 +17,7 @@
       <PropertyRef Name="Nombre" />
     </Key>
     <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Carpeta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Carpeta" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Licenciamiento" Relationship="Self.FK__Licenciam__Nombr__1CF15040" FromRole="Clientes" ToRole="Licenciamiento" />
   </EntityType>
   <EntityType Name="Configuraciones">
@@ -25,7 +25,7 @@
       <PropertyRef Name="Clave" />
     </Key>
     <Property Name="Clave" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Valor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Valor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Licenciamiento">
     <Key>
@@ -68,7 +68,7 @@
     <Key>
       <PropertyRef Name="IdUsuario" />
     </Key>
-    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Usuario1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Contraseña" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
