@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\WS Logic Persistance\ServicioDatos\ModeloLicencias.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\WebApiRest\ServicioDatos\ModeloLicencias.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
