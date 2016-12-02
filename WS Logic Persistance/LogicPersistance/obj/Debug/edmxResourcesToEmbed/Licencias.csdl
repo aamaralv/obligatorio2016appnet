@@ -70,7 +70,7 @@
     </Key>
     <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Usuario1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Contraseña" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
     <Property Name="Correo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Auditoria" Relationship="Self.FK__Auditoria__IdUsu__1FCDBCEB" FromRole="Usuario" ToRole="Auditoria" />

@@ -30,22 +30,24 @@ namespace WebServiceApplication{
             {
                 using (LicenciasEntities DBF = new LicenciasEntities())
                 {
-                    var user = DBF.Usuario.Where(Usuario => Usuario.Usuario1 == logueo);
-
-                    if (user != null)
+                    var user = DBF.Usuario.Where(Usuario => Usuario.Login == logueo);
+                    Usuario usuario = new Usuario();
+                    if (user.Count()>0)
                     {
-                        foreach (Usuario cliente in user) {
-                            if (cliente.Contraseña == contraseña)
+                        foreach (Usuario usuarioEncontrado in user) {
+                            if (usuarioEncontrado.Contraseña == contraseña)
                             {
-                                //pregunto por rol
-                                error = "No";
+                                if (usuarioEncontrado.Roles.ElementAt(0).Descripcion == "Administrador")
+                                    error = "No";
+                                else
+                                    error = "El usuario no pertenece al rol Administrador";
+                                
                             }
                             else {
                                 error = "La contraseña no es correcta";
                             }
                         }
-                    }
-                    else{
+                    }else{
                         error = "El usuario no existe";
                     }
 
@@ -69,19 +71,19 @@ namespace WebServiceApplication{
             {
                 using (LicenciasEntities DBF = new LicenciasEntities())
                 {
-                    var usuarioABuscar = DBF.Usuario.Where(Usuario => Usuario.Usuario1 == logueo);
+                    var usuarioABuscar = DBF.Usuario.Where(Usuario => Usuario.Login == logueo);
                     if (usuarioABuscar.Count() == 0)
                     {
                         Usuario usuario = new Usuario();
                         {
                             usuario.Nombre = nombre;
-                            usuario.Usuario1 = logueo;
+                            usuario.Login = logueo;
                             usuario.Contraseña = contraseña;
                             usuario.Correo = correo;
                             DBF.Usuario.Add(usuario);
                             DBF.SaveChanges();
                         }
-                        var usuarioABuscarParaAsiganrRol = DBF.Usuario.Where(Usuario => Usuario.Usuario1 == logueo);
+                        var usuarioABuscarParaAsiganrRol = DBF.Usuario.Where(Usuario => Usuario.Login == logueo);
 
                         foreach (Usuario user in usuarioABuscarParaAsiganrRol) {
                             AddRol(idRol,user.IdUsuario);
@@ -114,7 +116,7 @@ namespace WebServiceApplication{
                     if (original != null)
                     {
                         original.Nombre = nombre;
-                        original.Usuario1 = usuario1;
+                        original.Login = usuario1;
                         original.Contraseña = contrasena;
                         original.Correo = correo;
                         DBF.SaveChanges();

@@ -246,7 +246,7 @@
           </Key>
           <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Usuario1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Login" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="Contraseña" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
           <Property Name="Correo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Auditoria" Relationship="Self.FK__Auditoria__IdUsu__1FCDBCEB" FromRole="Usuario" ToRole="Auditoria" />
@@ -392,7 +392,7 @@
               <MappingFragment StoreEntitySet="Usuario">
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-                <ScalarProperty Name="Usuario1" ColumnName="Usuario" />
+                <ScalarProperty Name="Login" ColumnName="Usuario" />
                 <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
                 <ScalarProperty Name="Correo" ColumnName="Correo" />
               </MappingFragment>
