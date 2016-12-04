@@ -1,0 +1,58 @@
+﻿<h2>Licencias</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+
+<style>
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+</style>
+
+<div ng-controller="licenciaslistaController">
+    
+        <table>
+            <tr>
+                <th>Nro.Licencia</th>
+                <th>Archivo</th>
+                <th>Cliente</th>
+                <th>Id Licencia</th>
+                <th>Version</th>
+                <th>Serial Modulos</th>
+                <th>Concurrencia</th>
+                <th>Fecha Solicitud</th>
+                <th>Fecha Generacion</th>
+                <th>Fecha Caducidad</th>
+                <th>Responsable Solicitud</th>
+                <th>Responsable Generacion</th>
+            </tr>
+            <tr ng-repeat="licencia in licenciamientos">
+                <td>{{ licencia.NumeroLicencia }}</td>
+                <td>{{ licencia.NombreArchivo }}</td>
+                <td>{{ licencia.NombreCliente }}</td>
+                <td>{{ licencia.IdLicencia }}</td>
+                <td>{{ licencia.Version }}</td>
+                <td>{{ licencia.SerialModulos }}</td>
+                <td>{{ licencia.Concurrencia }}</td>
+                <td>{{ licencia.FechaSolicitud }}</td>
+                <td>{{ licencia.FechaGeneracion }}</td>
+                <td>{{ licencia.FechaCaducidad }}</td>
+                <td>{{ licencia.ResponsableSolicitud }}</td>
+                <td>{{ licencia.ResponsableGeneracion }}</td>
+            </tr>
+        </table>
+   
+    </div>
+
+

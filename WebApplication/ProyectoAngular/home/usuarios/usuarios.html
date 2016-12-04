@@ -1,0 +1,49 @@
+﻿<h2>Usuarios</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+
+<style>
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+</style>
+
+<div ng-controller="usuarioslistaController">
+
+    <p>{{ error }}</p>
+
+
+
+    <table>
+        <tr>
+
+            <th>Nombre</th>
+            <th>Login</th>
+            <th>Correo</th>
+            <th>idusuario</th>
+        </tr>
+
+        <tr ng-repeat="usuario in data">
+            <td>{{ usuario.Roles[0].Usuario[0].Nombre}}</td>
+            <td>{{ usuario.Roles[0].Usuario[0].Login }}</td>
+            <td>{{ usuario.Roles[0].Usuario[0].Correo }}</td>
+            <td>{{ usuario.Roles[0].Usuario[0].idusuario }}</td>
+
+        </tr>
+    </table>
+
+
+
+</div>
+

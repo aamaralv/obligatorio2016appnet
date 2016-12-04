@@ -1,0 +1,106 @@
+﻿<h2>Alta Licencia</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<style>
+    label {
+        display: inline-block;
+        width: 180px;
+        text-align: left;
+    }
+ 
+</style>
+
+
+<div ng-controller="altalicenciaController" style="width:350px; margin:0 auto;">
+    <form name="myForm" novalidate ng-submit="enviar()">
+        <div class="block">
+            <label>Nro.Licencia:</label>
+            <input type="number" ng-model="licencia.NumeroLicencia" ng-pattern="/^[0-9]{1,7}$/" name="NumeroLicencia" required title="Numero de licencia númerico 7 cifras">
+            <span ng-show="myForm.NumeroLicencia.$touched && myForm.NumeroLicencia.$invalid">Numero de Licencia es requerido.</span>
+            <span ng-show="myForm.NumeroLicencia.$error.pattern">Formato incorrecto para Numero de licencia!</span><br>
+        </div>
+
+        <div class="block">
+            <label>Archivo:</label>
+            <input type="text" ng-model="licencia.NombreArchivo" name="NombreArchivo" required title="Nombre del archivo">
+            <span ng-show="myForm.NombreArchivo.$touched && myForm.NombreArchivo.$invalid">Nombre del archivo es requerido.</span><br>
+        </div>
+
+        <div class="block">
+            <label>
+                Cliente:
+            </label>
+            <input type="text" ng-model="licencia.NombreCliente" name="NombreCliente" required title="Nombre del cliente">
+            <span ng-show="myForm.NombreCliente.$touched && myForm.NombreCliente.$invalid">Nombre del archivo es requerido.</span><br>
+        </div>
+
+        <div class="block">
+            <label>
+                Id Licencia:
+            </label>
+            <input type="text" ng-model="licencia.IdLicencia" name="IdLicencia" required title="Id de Licencia">
+            <span ng-show="myForm.IdLicencia.$touched && myForm.IdLicencia.$invalid">Id de Licencia es requerido.</span><br>
+        </div>
+        <div class="block">
+            <label>
+                Version:
+            </label>
+            <input type="text" ng-model="licencia.Version" name="Version" required title="Version">
+            <span ng-show="myForm.Version.$touched && myForm.Version.$invalid">Version es requerido.</span><br>
+        </div>
+        <div class="block">
+            <label>Serial Modulos:</label>
+            <input type="text" ng-model="licencia.SerialModulos" name="SerialModulos" required title="Serial Modulos">
+            <span ng-show="myForm.SerialModulos.$touched && myForm.SerialModulos.$invalid">Version es requerido.</span><br>
+        </div>
+        <div class="block">
+            <label>Concurrencia:</label>
+            <input type="text" ng-model="licencia.Concurrencia" name="Concurrencia" required title="Concurrencia">
+            <span ng-show="myForm.Concurrencia.$touched && myForm.Concurrencia.$invalid">Concurrencia es requerido.</span><br>
+        </div>
+        <div class="block">
+            <label>
+                Fecha Solicitud:
+            </label>
+            <input type="text" ng-model="licencia.FechaSolicitud" ng-pattern="/^((\d{4})-(\d{2})-(\d{2})|(\d{2})\/(\d{2})\/(\d{4}))$/" name="FechaSolicitud" required title="El formato es YYYY-MM-DD">
+            <span ng-show="myForm.FechaSolicitud.$touched && myForm.FechaSolicitud.$invalid">Fecha Solicitud es requerido.</span><br>
+            <span ng-show="myForm.FechaSolicitud.$error.pattern">Formato incorrecto para la fecha!</span>
+        </div>
+        <div class="block">
+            <label>Fecha Generacion:</label>
+            <input type="text" ng-model="licencia.FechaGeneracion"  ng-pattern="/^((\d{4})-(\d{2})-(\d{2})|(\d{2})\/(\d{2})\/(\d{4}))$/" name="FechaGeneracion" required title="El formato es YYYY-MM-DD">
+            <span ng-show="myForm.FechaGeneracion.$touched && myForm.FechaGeneracion.$invalid">Fecha Generacion es requerido.</span><br>
+            <span ng-show="myForm.FechaGeneracion.$error.pattern">Formato incorrecto para la fecha!</span>
+        </div>
+        <div class="block">
+            <label>Fecha Caducidad:</label>
+            <input type="text" ng-model="licencia.FechaCaducidad"  ng-pattern="/^((\d{4})-(\d{2})-(\d{2})|(\d{2})\/(\d{2})\/(\d{4}))$/" name="FechaCaducidad" required title="El formato es YYYY-MM-DD">
+            <span ng-show="myForm.FechaCaducidad.$touched && myForm.FechaCaducidad.$invalid">Fecha Caducidad es requerido.</span><br>
+            <span ng-show="myForm.FechaCaducidad.$error.pattern">Formato incorrecto para la fecha!</span>
+        </div>
+        <div class="block">
+            <label>Responsable Solicitud:</label>
+            <input type="text" ng-model="licencia.ResponsableSolicitud" name="ResponsableSolicitud" required title="Responsable Solicitud">
+            <span ng-show="myForm.ResponsableSolicitud.$touched && myForm.ResponsableSolicitud.$invalid">Responsable Solicitud es requerido.</span><br>
+        </div>
+        <div class="block">
+            <label>Responsable Generacion:</label>
+            <input type="text" ng-model="licencia.ResponsableGeneracion" name="ResponsableGeneracion" required title="Responsable Generacion">
+            <span ng-show="myForm.ResponsableGeneracion.$touched && myForm.ResponsableGeneracion.$invalid">Responsable Solicitud es requerido.</span><br>
+        <div style="float: right">
+            <button ng-click="reset()">Resetear</button>
+            <input type="submit" value="Enviar"><br>
+        </div>
+        
+       
+    </form>
+    <br><br>
+    <!--<p>send = {{licencia}}</p>
+    <p>{{ data }}</p> 
+    <p>{{ error }}</p> -->
+
+    <p>{{ error }}</p>
+ 
+</div>
+
+

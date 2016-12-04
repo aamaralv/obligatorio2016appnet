@@ -17,10 +17,23 @@ namespace ServicioDatos.Controllers
         private DBLicenciasEntities db = new DBLicenciasEntities();
 
         // GET: api/Licenciamientos
-        public IQueryable<Licenciamiento> GetLicenciamiento()
+
+        public IEnumerable<Licenciamiento> GetLicenciamiento()
         {
-            return db.Licenciamiento;
+            List<Licenciamiento> list = null;
+            try { 
+          
+                    db.Configuration.ProxyCreationEnabled = false;
+                    list = db.Licenciamiento.ToList();
+                
+            }
+            catch (Exception ex)
+            {
+                System.Console.Write(ex.StackTrace);
+            }
+            return list;
         }
+
 
         // GET: api/Licenciamientos/5
         [ResponseType(typeof(Licenciamiento))]
@@ -74,6 +87,7 @@ namespace ServicioDatos.Controllers
         [ResponseType(typeof(Licenciamiento))]
         public IHttpActionResult PostLicenciamiento(Licenciamiento licenciamiento)
         {
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -87,13 +101,19 @@ namespace ServicioDatos.Controllers
             }
             catch (DbUpdateException)
             {
+                Clientes clientes = db.Clientes.Find(licenciamiento.NombreCliente);
+                if (clientes == null)
+                {
+                    return NotFound();
+                }
+
                 if (LicenciamientoExists(licenciamiento.NumeroLicencia))
                 {
                     return Conflict();
                 }
                 else
                 {
-                    throw;
+                    return BadRequest(ModelState);
                 }
             }
 
@@ -129,5 +149,6 @@ namespace ServicioDatos.Controllers
         {
             return db.Licenciamiento.Count(e => e.NumeroLicencia == id) > 0;
         }
+        
     }
 }

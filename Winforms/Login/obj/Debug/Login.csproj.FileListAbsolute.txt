@@ -20,3 +20,14 @@ C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winfo
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Login\obj\Debug\Login.pdb
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Login\bin\Debug\Login.exe.config
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Login\bin\Debug\Login.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\bin\Debug\Login.exe.config
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\bin\Debug\Login.exe
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\bin\Debug\Login.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\bin\Debug\Fomularios.exe
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\bin\Debug\Fomularios.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\obj\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\obj\Debug\Login.Login.resources
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\obj\Debug\Login.csproj.GenerateResource.Cache
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\obj\Debug\Login.exe
+C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Login\obj\Debug\Login.pdb

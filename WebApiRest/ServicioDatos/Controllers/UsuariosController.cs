@@ -20,6 +20,7 @@ namespace ServicioDatos.Controllers
         public IQueryable<Usuario> GetUsuario()
         {
             return db.Usuario;
+            
         }
 
         // GET: api/Usuarios/5

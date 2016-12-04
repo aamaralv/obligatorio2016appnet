@@ -73,6 +73,11 @@
     <Content Include="app-services\user.service.local-storage.js" />
     <Content Include="app.js" />
     <Content Include="home\home.controller.js" />
+    <Content Include="home\auditorias\auditorias.html" />
+    <Content Include="home\clientes\clientes.html" />
+    <Content Include="home\licencias\altalicencia.html" />
+    <Content Include="home\usuarios\usuarios.html" />
+    <Content Include="home\licencias\licencias.html" />
     <Content Include="home\home.view.html" />
     <Content Include="index.html" />
     <Content Include="login\login.controller.js" />

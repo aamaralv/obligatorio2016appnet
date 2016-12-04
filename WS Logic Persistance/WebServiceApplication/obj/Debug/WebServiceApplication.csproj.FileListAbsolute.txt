@@ -215,3 +215,39 @@ C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\WS Lo
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.csprojResolveAssemblyReference.cache
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.dll
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\ApplicationInsights.config
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\csc.exe
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\vbc.exe
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\WebServiceApplication.dll.config
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\WebServiceApplication.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\WebServiceApplication.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\LogicPersistance.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.Web.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\LogicPersistance.pdb
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.AI.Web.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.csprojResolveAssemblyReference.cache
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.dll
+C:\Users\aa\Source\Repos\obligatorio2016appnet\WS Logic Persistance\WebServiceApplication\obj\Debug\WebServiceApplication.pdb

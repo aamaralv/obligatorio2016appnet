@@ -17,8 +17,10 @@
         })();
 
         function login() {
+            //window.alert("hi!");
             vm.dataLoading = true;
-            AuthenticationService.Login(vm.username, vm.password, function (response) {
+            $location.path('/');
+            /*AuthenticationService.Login(vm.username, vm.password, function (response) {
                 if (response.success) {
                     AuthenticationService.SetCredentials(vm.username, vm.password);
                     $location.path('/');
@@ -26,7 +28,7 @@
                     FlashService.Error(response.message);
                     vm.dataLoading = false;
                 }
-            });
+            });*/
         };
     }
 

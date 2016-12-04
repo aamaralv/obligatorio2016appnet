@@ -1,11 +1,235 @@
-﻿<h1>Hi {{vm.user.firstName}}!</h1>
+﻿<!--
+
+URL del artículo: http://www.ejemplode.com/17-html/94-ejemplo_de_comentario_en_html.html
+Leer completo: Ejemplo de Comentario en HTML<h1>Hi {{vm.user.firstName}}!</h1>
 <p>Logueo exitoso</p>
 <h3>Usuarios:</h3>
+
+
+
 <ul>
     <li ng-repeat="user in vm.allUsers">
         {{user.username}} ({{user.firstName}} {{user.lastName}})
         - <a href="#" ng-click="vm.deleteUser(user.id)">Delete</a>
     </li>
+
+
 </ul>
 <p>&nbsp;</p>
-<p><a href="#/login" class="btn btn-primary">Logout</a></p> 
+<p><a href="#/login" class="btn btn-primary">Logout</a></p>-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>home</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="app-content/app.css" rel="stylesheet" />
+</head>
+
+<body ng-app="myApp">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
+    <script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
+    <script src="app.js"></script>
+    <script src="app-services/authentication.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+    <!-- Real user service that uses an api
+    <script src="app-services/user.service.js"></script>
+    <!-- Fake user service for demo that uses local storage
+    <script src="app-services/user.service.local-storage.js"></script>
+    <script src="home/home.controller.js"></script>
+    <script src="login/login.controller.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+    <!--ESTO SEGURAMENTE VA EN EL css-->
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover, .offcanvas a:focus {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+        }
+    </style>
+
+
+    <!--ESTO SEGURAMENTE VA EN EL APP.JS-->
+
+
+
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+            .when("/home", {
+                templateUrl: "home/home.view.html"
+            })
+            .when("/listausuarios", {
+                templateUrl: "usuarios/usuarios.html",
+                controller: 'usuarioslistaController'
+            })
+            .when("/listaauditorias", {
+                templateUrl: "auditorias/auditorias.html",
+                controller: 'auditorialistaController'
+            })
+            .when("/listalicencias", {
+                templateUrl: "licencias/licencias.html",
+                controller: 'licenciaslistaController'
+            })
+            .when("/altalicencia", {
+                templateUrl: "licencias/altalicencia.html",
+                controller: 'altalicenciaController'
+            })
+            .when("/listaclientes", {
+                templateUrl: "clientes/clientes.html",
+                controller: 'clienteslistaController'
+            })
+
+        });
+
+        //*********************Listados****************************************
+
+
+        app.controller('usuarioslistaController', function ($scope, $http) {
+            $http.get("http://localhost:64948/api/Usuarios")
+                .success(function (response) {
+                    $scope.data = response;
+
+                       })
+                .error(function (error, status) {
+                    $scope.status = status;
+
+                    $scope.error = "Ocurrio un error! status[" + status + "]";
+
+
+                });
+        });
+
+        app.controller('licenciaslistaController', function ($scope, $http) {
+            $http.get("http://localhost:64948/api/Licenciamientos")
+            .then(function (response) { $scope.licenciamientos = response.data; });
+        });
+
+        app.controller('clienteslistaController', function ($scope, $http) {
+            $http.get("http://localhost:64948/api/Clientes")
+            .then(function (response) { $scope.clientes = response.data; });
+        });
+
+        app.controller('auditorialistaController', function ($scope, $http) {
+            $http.get("http://localhost:64948/api/Auditorias")
+            .then(function (response) { $scope.auditorias = response.data; });
+        });
+
+
+
+        //*********************Altas****************************************
+        app.controller('altalicenciaController', function ($scope, $http, $location) {
+            $scope.licencia = "";
+
+            $scope.reset = function () {
+                $scope.licencia = "";
+            };
+            $scope.reset();
+            //Envia el json al LicenciamientosController
+            $scope.enviar = function () {
+                $http.post("http://localhost:64948/api/Licenciamientos", $scope.licencia)
+               .success(function (data) {
+                   //$scope.data = data;
+                   $location.path('/listalicencias');
+
+               })
+                .error(function (error, status) {
+                    $scope.status = status;
+                    if (status == 409) {
+                        $scope.error = "La licencia ya esta registrada! status[" + status + "]";
+                    } else if (status == 404) {
+                        $scope.error = "El cliente no esta registrado! status[" + status + "]";
+                    } else {
+                        $scope.error = "Ocurrio un error! status[" + status + "]";
+                    }
+
+                });
+
+
+            }
+
+        })
+
+
+    </script>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#listaauditorias">Ver Auditorias</a>
+        <a href="#listalicencias">Ver Licencias</a>
+        <a href="#altalicencia">Agregar Licencia</a>
+        <a href="#listaclientes">Ver Clientes</a>
+        <a href="#listausuarios">Ver Usuarios</a>
+        <a href="#home">home</a>
+    </div>
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <div style="width:800px; margin:0 auto;">
+
+        <p>Sistema de gestion de licencias,seleccione una opción del menú.</p>
+    </div>
+    <div ng-view style="width:800px; margin:0 auto;"></div>
+
+</body>
+</html>
