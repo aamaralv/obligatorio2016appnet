@@ -24,7 +24,6 @@ namespace Login
         {
             if (validarUsuario(sender)) {
                 if (validarContraseña(sender)) {
-                    String connString = ConfigurationManager.ConnectionStrings["Connection_String"].ConnectionString;
                     try {
                         WSConfiguraciones1.WebService ws = new WSConfiguraciones1.WebService();
                         String error = ws.LoguearUsuarioAdmin(txbUsuario.Text, txbContraseña.Text);

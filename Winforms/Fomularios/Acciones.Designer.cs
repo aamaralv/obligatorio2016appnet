@@ -480,6 +480,7 @@
             this.btnProbarMail.TabIndex = 21;
             this.btnProbarMail.Text = "Probar conexión";
             this.btnProbarMail.UseVisualStyleBackColor = true;
+            this.btnProbarMail.Click += new System.EventHandler(this.btnProbarMail_Click);
             // 
             // groupBox5
             // 

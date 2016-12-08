@@ -104,7 +104,7 @@ namespace Fomularios
         private void CargarRoles()
         {
             /*Carga de combos para seleccion de roles*/
-            WSConfiguraciones.Roles[] roles = ws.ListRoles();
+                WSConfiguraciones.Roles[] roles = ws.ListRoles();
 
             this.cmbroles.DataSource = roles;
             this.cmbroles.DisplayMember = "Descripcion";
@@ -129,6 +129,7 @@ namespace Fomularios
             cbxAutenticacion.ValueMember = configuraciones[0].Valor;
             txbUsuarioMail.Text = configuraciones[6].Valor;
             txbContraseñaMail.Text = configuraciones[1].Valor;
+            txbMensajeMail.Text = "";
         }
 
         private void CargarRutas()
@@ -171,7 +172,7 @@ namespace Fomularios
 
                 foreach (WSConfiguraciones.Roles rol in roles)
                 {
-                    this.dataGridViewUsuarios.Rows.Insert(this.dataGridViewUsuarios.NewRowIndex, usuario.IdUsuario, usuario.Nombre, usuario.Usuario1, rol.Descripcion, usuario.Correo);
+                    this.dataGridViewUsuarios.Rows.Insert(this.dataGridViewUsuarios.NewRowIndex, usuario.IdUsuario, usuario.Nombre, usuario.Login, rol.Descripcion, usuario.Correo);
 
                 }
 
@@ -381,9 +382,9 @@ namespace Fomularios
 
                     String clave = @"Ruta\|Repositorio";
                     ws.UpdateConfig(clave, lblRutaRepositorioNueva.Text);
-                    CargarConexiones(); //CargarRutas();   Hay que mejorarlo porque esta chancho
                     MessageBox.Show("Actualización exitosa.");
                     lblRutaRepositorioNueva.Text = "";
+                    CargarRutas();
 
                 }
             }
@@ -415,7 +416,7 @@ namespace Fomularios
                         File.Copy(direccionOrigen, direccionDestino, true);
                         MessageBox.Show("La licencia por defecto fue actualizada.");
                         lblRutaNuevaLicencia.Text = "";
-                        CargarConexiones();
+                        CargarRutas();
                     }
                 }
             }
@@ -448,7 +449,7 @@ namespace Fomularios
                         File.Copy(direccionOrigen, direccionDestino, true);
                         MessageBox.Show("La licencia por defecto fue actualizada.");
                         lblRutaNuevaOI.Text = "";
-                        CargarConexiones();
+                        CargarRutas();
 
 
                     }
@@ -484,7 +485,14 @@ namespace Fomularios
 
             } catch (Exception exGuardarMail) {
                 MessageBox.Show(exGuardarMail.Message);
+                txbMensajeMail.Text = "Guardado";
             }
+        }
+
+        private void btnProbarMail_Click(object sender, EventArgs e)
+        {
+            //Si la comprobacion contra servidor de correo es ok ejecuta lo siguiente, en caso contrario carga el error
+            txbMensajeMail.Text = "ok";
         }
     }
 }

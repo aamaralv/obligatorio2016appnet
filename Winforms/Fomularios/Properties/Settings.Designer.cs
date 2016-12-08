@@ -26,7 +26,7 @@ namespace Fomularios.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:58392/WebService.asmx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/WebServiceApplication/WebService.asmx")]
         public string Fomularios_WSConfiguraciones_WebService {
             get {
                 return ((string)(this["Fomularios_WSConfiguraciones_WebService"]));

@@ -771,7 +771,7 @@ namespace Fomularios.WSConfiguraciones {
         
         private string nombreField;
         
-        private string usuario1Field;
+        private string loginField;
         
         private string contraseñaField;
         
@@ -802,12 +802,12 @@ namespace Fomularios.WSConfiguraciones {
         }
         
         /// <remarks/>
-        public string Usuario1 {
+        public string Login {
             get {
-                return this.usuario1Field;
+                return this.loginField;
             }
             set {
-                this.usuario1Field = value;
+                this.loginField = value;
             }
         }
         

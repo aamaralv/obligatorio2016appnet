@@ -7,14 +7,6 @@ C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorioPuntoNet2016Lice
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorioPuntoNet2016Licenciasx\obligatorioPuntoNet2016Licencias\Fomularios\obj\Debug\Fomularios.exe
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorioPuntoNet2016Licenciasx\obligatorioPuntoNet2016Licencias\Fomularios\obj\Debug\Fomularios.pdb
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorioPuntoNet2016Licenciasx\obligatorioPuntoNet2016Licencias\Fomularios\obj\Debug\Configuraciones.csprojResolveAssemblyReference.cache
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.exe.config
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.exe
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.pdb
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.Configuraciones.resources
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.Properties.Resources.resources
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Configuraciones.csproj.GenerateResource.Cache
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.exe
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.pdb
 C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.exe.config
 C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.exe
 C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.pdb
@@ -24,3 +16,12 @@ C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fom
 C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Configuraciones.csproj.GenerateResource.Cache
 C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.exe
 C:\Users\aa\Source\Repos\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.pdb
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.exe.config
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.exe
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\bin\Debug\Fomularios.pdb
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.Configuraciones.resources
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.Properties.Resources.resources
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Configuraciones.csproj.GenerateResource.Cache
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.exe
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Fomularios.pdb
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\obligatorio2016appnet\Winforms\Fomularios\obj\Debug\Configuraciones.csprojResolveAssemblyReference.cache
